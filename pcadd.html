@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>PC add</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="font-family: 'Hind medium', sans-serif;">
+    <div class="container-fluid" style="font-family:"><br>
+	
+        <form method="post" autocomplete="off" action="_">
+            <div class="card visible">
+                <!-- <div class="card-header d-lg-flex justify-content-lg-center align-items-lg-center">
+                    <h5 class="text-capitalize text-center visible">Add Desktop/laptop</h5>
+					</div>
+				-->
+                <div class="card-body visible">
+                    <div class="form-row">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+						<label class="d-lg-flex justify-content-lg-center align-items-lg-center">PC ID : </label>
+						<input class="form-control form-control-sm  text-uppercase" type="text" name="pcid" required="" placeholder="">
+                            <br>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+						<label class="d-lg-flex justify-content-lg-center align-items-lg-center">Lab ID :</label>
+						<select class="form-control form-control-sm" name="pclid" required>
+						<option value="" selected> - -</option>
+						<option value="item">item</option>
+						</select>
+                            <br>
+                        </div>
+						
+                        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+						<label class="d-lg-flex justify-content-lg-center align-items-lg-start">PC Type :</label>
+						<select class="form-control form-control-sm" name="pctype" required="">
+						<option value="" selected="">- -</option>
+						<option value="Desktop">Desktop</option>
+						<option value="Laptop">Laptop</option>
+						<option value="Server PC">Server PC</option>
+						</select>
+                            <br>
+                        </div>
+						
+                        <div class="col-sm-6 col-md-7 col-lg-5 col-xl-5 text-capitalize">
+						<label class="d-lg-flex justify-content-lg-center align-items-lg-start">PC brand & model :</label>
+						<input class="form-control form-control-sm" type="text" name="pcbmod" required="" placeholder="">
+                            <br>
+                        </div>
+						
+                        <div class="col-sm-6 col-md-5 col-lg-6 col-xl-6">
+						<label class="d-lg-flex justify-content-lg-center align-items-lg-center">PC serial no. :</label>
+						<input class="form-control form-control-sm" type="text" name="pcserial" required="">
+                            <br>
+                        </div>
+						
+                        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<label class="d-lg-flex justify-content-lg-center align-items-lg-center">PC install date: </label>
+						<input class="form-control form-control-sm" type="date" name="pcindate" required="" min="2005-01-01" id="datein">
+						<script>
+						datein.max=new Date().toISOString().split("T")[0];
+						</script>
+                            <br>
+                        </div>
+						
+                        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<label class="d-lg-flex justify-content-lg-center align-items-lg-center">PC scrap date: </label>
+						<input class="form-control form-control-sm" type="date" name="pcoutdate" min="2005-01-01" id="dateout">
+						<script>
+						dateout.max=new Date().toISOString().split("T")[0];
+						</script>
+                            <br>
+                        </div>
+                    </div>
+					
+                    <h5 class="text-danger">Hardware details :&nbsp;</h5>
+					
+                    <div class="form-row d-xl-flex">
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+							<label class="d-flex"><i class="fas fa-microchip"></i>&nbsp;Processor : </label>
+							<select class="form-control form-control-sm" required="" name="pcproc">
+                            <option value="" selected=""> - - </option>
+                            <option value="Intel Pentium 4">Intel Pentium 4</option>
+                            <option value="Intel Core 2 Duo">Intel Core 2 Duo</option>
+							<option value="Intel Dual Core">Intel Dual Core</option>
+							<option value="Intel Core i3">Intel Core i3</option>
+							<option value="Intel core i5">Intel core i5</option>
+							<option value="Intel core i7">Intel core i7</option>
+							<option value="Intel Xeon">Intel Xeon</option>
+							<option value="AMD series">AMD series</option>
+							</select>
+                            <br>
+						</div>
+						
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+						  <div class="row">
+						  <div class="col-6"> 
+						  <label> <i class="fas fa-memory"></i>&nbsp;RAM Version : </label>
+						  <select class="form-control form-control-sm" required name="pcramver">
+						   <option value="" selected="" readonly>- -</option>
+                                                   <option value="DDR1">DDR1</option>
+                                                    <option value="DDR2">DDR2</option>
+                                                    <option value="DDR3">DDR3</option>
+                                                    <option value="DDR4">DDR4</option>
+
+						</select>	
+							</div>
+							
+							  <div class="col-6"> 
+							  <label> <i class="fas fa-memory"></i>&nbsp;RAM Size : </label>
+						<select class="form-control form-control-sm" required name="pcramsize">
+						   <option value="" selected=""> - - </option>
+                                                   <option value="512 MB">512 MB</option>
+                                                    <option value="1 GB">1 GB</option>
+                                                    <option value="2 GB">2 GB</option>
+                                                    <option value="3 GB">3 GB</option>
+                                                    <option value="4 GB">4 GB</option>
+                                                    <option value="5 GB">5 GB</option>
+                                                    <option value="6 GB">6 GB</option>
+                                                    <option value="7 GB">7 GB</option>
+                                                    <option value="8 GB">8 GB</option>
+						</select>
+						  </div>
+						  </div>
+                            <br>
+                        </div>
+												
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+						<label class="d-flex"><i class="fas fa-hdd"></i>&nbsp;Hard disk size :</label>
+						<select class="form-control form-control-sm" name="pchdd" required="">
+													<option value="" selected=""> - -</option>
+                                                    <option value="320 GB">~320 GB</option>
+                                                    <option value="500 GB">~500 GB</option>
+                                                    <option value="720 GB">~720 GB</option>                                                    
+                                                    <option value="1 TB">1 TB</option>
+                                                    <option value="2 TB">2 TB</option>
+						</select>
+                            <br>
+                        </div>
+						
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+						<label class="d-flex"><i class="fas fa-desktop"></i>&nbsp;Monitor :</label>
+						<select class="form-control form-control-sm" name="pcmonitor">
+                                                <option value="" selected="">- -</option>
+                                                <option value="VGA">VGA</option>
+                                                <option value="LCD">LCD</option>
+                                                <option value="LED">LED</option>
+						</select>
+                            <br>
+                        </div>
+
+						
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+						<label class="d-flex"><i class="fas fa-mouse-pointer"></i>&nbsp;Mouse type:</label>
+						<select class="form-control form-control-sm" name="pcmouse">
+                                                        <option value="" selected="">- -</option>
+                                                        <option value="PS2 WIRED">PS2 - WIRED</option>
+                                                        <option value="USB - WIRED">USB - WIRED</option>
+                                                        <option value="USB - WIRELESS">USB - WIRELESS</option>
+						</select>
+                            <br>
+                        </div>
+						
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+						<label class="d-flex"><i class="fas fa-keyboard"></i>&nbsp;Keyboard type: </label>
+						<select class="form-control form-control-sm" name="pckbrd">
+                                                        <option value="" selected=""> - - </option>
+                                                        <option value="PS2 WIRED">PS2 - WIRED</option>
+                                                        <option value="USB - WIRED">USB - WIRED</option>
+                                                        <option value="USB - WIRELESS">USB - WIRELESS</option>
+						</select>
+                            <br>
+                        </div>
+                    </div>
+				</div>
+	
+						<div class="card-footer visible p-2">
+								<div class="form-row visible">
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3 offset-3 offset-sm-4">
+									<button class="btn btn-success btn-sm" type="submit">ADD </button>
+									</div>
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+									<button class="btn btn-primary btn-sm" type="reset">Clear</button></div>
+								</div>
+						</div>
+			</div>
+    </form>
+
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	
+</body>
+
+</html>

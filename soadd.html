@@ -1,0 +1,107 @@
+
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> 
+    <title> software add </title> 
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css"> 
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind"> 
+    <link rel="stylesheet" href="assets/css/styles.css"> 
+ </head> 
+
+<body style="font-family: 'ek mukta', sans-serif;"> 
+    <div class="container-fluid" >  
+                    <form method="post" autocomplete="off" action="_"> 
+                            <div class="card"> 
+                               <!-- <div class="card-header"> 
+									<h5> Add / Edit Software details </h5> 
+									</div> 
+								-->
+							<div class="card-body"> 
+                                    <div class="form-row"> 
+									
+									<div class="col-12 col-sm-12 col-md-4 col-lg-2 col-xl-2"> 
+										<label> Software Type :  </label> <br>
+										<span>OS : </span><input type="radio" id="OS" name="sotype" value="OS" onclick="show1()" required style=""/> &nbsp;&nbsp;&nbsp;
+										<span>Other : </span> <input type="radio" id="Other" name="sotype" value="Other" required onclick="show2()" /> <hr>
+									</div>
+									 
+
+										 
+										 
+									<div class="col-12 col-sm-12 col-md-8 col-lg-4 col-xl-5" id="divo" style="display:block"> 
+									<label> Select software type : </label>
+									<hr>
+									</div>
+									
+									
+									<div class="col-12 col-sm-12 col-md-8 col-lg-4 col-xl-5" id="div1" style="display:none"> 
+										<label>  Operating System :&nbsp; </label> 
+                                          <select class="form-control form-control-sm" name="soname" required id="os"> 
+                                                <option value="" selected="" >  </option> 
+                                                <option value="Windows XP - 32 bits" > Windows XP : 32 bits </option> 
+                                                <option value="Wndows XP - 64 bits"> Wndows XP : 64 bits </option> 
+                                                <option value="Windows 7 - 32 bits"> Windows 7 : 32 bits </option> 
+                                                <option value="Windows 7 - 64 bits"> Windows 7 : 64 bits </option> 
+                                                <option value="Windows 8/8.1 - 32 bits"> Windows 8/8.1 : 32 bits </option> 
+                                                <option value="Windows 8/8.1 - 64 bits"> Windows 8/8.1 : 64 bits </option> 
+                                                <option value="Windows 10 - 32 bits"> Windows 10 : 32 bits </option> 
+                                                <option value="Windows 10 - 64 bits"> Windows 10 : 64 bits </option> 
+                                                <option value="Red hat linux"> Red Hat Linux </option> 
+                                                <option value="Ubuntu"> Ubuntu </option> 
+                                          </select> 									
+									</div> 
+										
+                                        <div class="col-12 col-sm-12 col-md-8 col-lg-4 col-xl-5" style="display:none" id="div2"> 
+										<label> Enter Software Name :&nbsp; </label> 
+										<input class="form-control form-control-sm" type="text" name="soname" required>  </div> 
+										
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3"> 
+										<label> Version :&nbsp; </label> <input class="form-control form-control-sm" type="text" name="sovers" required>  </div> 
+										
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-2">  
+										<label> PCid :&nbsp; </label> 
+										<select class="form-control form-control-sm" name="sopcid" required> 
+										<option value="" selected="">  </option> 
+										<option value="">-</option> 
+										 </select> 
+										 </div> 
+										
+										<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+										<label> Software details / uses :&nbsp; </label> 
+										<input class="form-control form-control-sm" type="text" name="souse"/>   </div> 
+								 </div> 
+									
+							 </div> 
+							    <div class="card-footer "> 
+										<div class="form-row "> 
+											<div class="col-3 col-sm-3 col-md-3 col-lg-3 offset-3 offset-sm-4"> <button class="btn btn-success btn-sm" type="submit"> ADD  </button>  </div> 
+											<div class="col-3 col-sm-3 col-md-3 col-lg-3"> <button class="btn btn-primary btn-sm" type="reset"> Clear </button>  </div> 
+										 </div> 
+								 </div> 
+                 </div> 
+             </form> 
+			
+     </div> 
+    <script> 
+	function show1(){
+		document.getElementById('div1').style.display='block';
+		document.getElementById('div2').style.display='none';
+		document.getElementById('divo').style.display='none';
+	}
+	function show2(){
+		document.getElementById('div1').style.display='none';
+		document.getElementById('divo').style.display='none';
+		document.getElementById('div2').style.display='block';
+	}
+	 </script> 
+	
+	<script src="assets/js/jquery.min.js">  </script> 
+    <script src="assets/bootstrap/js/bootstrap.min.js">  </script> 
+ </body> 
+
+ </html> 

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Printers and scanners Info</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="font-family: 'ek mukta', sans-serif;">
+    <div>
+        <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark navigation-clean-button">
+            <div class="container-fluid"><a class="navbar-brand text-capitalize text-warning" href="#">Computer Lab Manager</a><button class="navbar-toggler border rounded-0" data-toggle="collapse" data-target="#navcol-1"><i class="fa fa-navicon shadow-none"></i><span class="sr-only">Toggle navigation</span></button>
+                <div
+                    class="collapse navbar-collapse text-capitalize" id="navcol-1">
+                    <ul class="nav navbar-nav text-capitalize d-sm-flex flex-row ml-auto align-items-xl-center" style="font-size: 14px;">
+                        <li class="nav-item mr-3" role="presentation"><a class="nav-link text-white-50 mr-2" href="Lab.html"><i class="fas fa-store-alt"></i>&nbsp;Lab</a></li>
+                        <li class="nav-item mr-3" role="presentation"><a class="nav-link text-white-50 mr-2" href="PC.html"><i class="fas fa-laptop"></i><strong>&nbsp;</strong>Desktop / Laptop</a></li>
+                        <li class="nav-item mr-3" role="presentation"><a class="nav-link text-white-50 mr-2" href="SO.html"><i class="fas fa-code"></i>&nbsp;Softwares</a></li>
+                        <li class="nav-item mr-3" role="presentation"><a class="nav-link active border-bottom border-info mr-2" href="PS.html"><i class="fas fa-print"></i>&nbsp;Printer / Scanner</a></li>
+                    </ul>
+            </div>
+    </div>
+    </nav>
+    </div>
+    <div class="container-fluid visible" style="font-size: 14px;">
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title">Printers / scanners</h6>
+				
+				<button class="btn btn-outline-success btn-sm float-right" type="button" style="margin: 5px;" data-toggle="modal" data-target="#psadd">
+				<i class="fas fa-plus"></i>
+				<strong>&nbsp; </strong>Add Device</button>
+				
+                <div class="table-responsive table-bordered text-nowrap">
+                    <table class="table table-bordered table-hover table-sm">
+                        <thead>
+                            <tr class="table-warning text-center">
+                                <th>P/S ID</th>
+                                <th>LAB ID</th>
+                                <th>Device type</th>
+                                <th>Function</th>
+                                <th>Brand &amp; model</th>
+                                <th>Serial no.</th>
+                                <th>Ink type</th>
+                                <th>Install date</th>
+                                <th>Scrap date</th>
+                                <th>Price</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                                <td>Cell 5</td>
+                                <td>Cell 6</td>
+                                <td>Cell 7</td>
+                                <td>Cell 8</td>
+                                <td>Cell 9</td>
+                                <td>Cell 10</td>
+                                <td class="d-xl-flex justify-content-xl-center">
+								<button title="Edit data" class="btn btn-outline-primary btn-sm text-center border rounded-circle" type="button" data-toggle="modal" data-target="#psedit">
+								<i class="far fa-edit"></i></button>&nbsp; &nbsp;
+								<button title="Remove data" class="btn btn-outline-danger btn-sm text-center border rounded-circle"
+                                        type="button">
+										<i class="far fa-trash-alt"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+		
+        		
+		<!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+		<div class="modal fade" id="psadd">
+    <div class="modal-dialog modal-lg ">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header p-2">
+          <h6 class="modal-title ">Add Printer / Scanner</h6>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div><br>
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="psadd.html"></iframe>
+			</div>
+		</div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer p-2">
+          <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal"> Close</button>
+        </div>
+        
+      </div>
+      </div>
+      </div>
+		
+		
+				<!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+				<div class="modal fade" id="psedit">
+    <div class="modal-dialog modal-lg ">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header p-2">
+          <h6 class="modal-title ">Edit Device details</h6>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+		- edit form -
+		</div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer p-2">
+          <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal"> Close</button>
+        </div>
+        
+      </div>
+      </div>
+      </div>
+
+	  <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+      
+		<hr>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
