@@ -1,3 +1,3 @@
-# Computer lab assets management system
+Computer lab assets management system
 
 
